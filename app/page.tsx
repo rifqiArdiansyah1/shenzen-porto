@@ -15,7 +15,7 @@ const projectsPlaceholder = [
     title: 'E‑Commerce — Shop B',
     imageUrl: "/simple-store.png",
     description: 'Simple store with product pages, shopping cart, and payment integration.',
-    url: 'https://github.com/rifqiArdiansyah1/simple-store',
+    url: 'https://simple-store-three.vercel.app/',
     imageAlt: 'Screenshot Shop B',
   },
   // {
