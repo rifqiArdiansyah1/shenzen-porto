@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 2 32 52" fill="none">
+  <defs>
+    <linearGradient id="sz_grad_mono" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+  <!-- Futuristic Hexagonal 'S' Monogram -->
+  <polygon points="20,12 36,4 48,12 48,26 36,34 24,28 24,22 36,28 40,24 40,16 34,12 24,18 20,16" fill="url(#sz_grad_mono)"/>
+  <polygon points="48,44 32,52 20,44 20,30 32,22 44,28 44,34 32,28 28,32 28,40 34,44 44,38 48,40" fill="url(#sz_grad_mono)"/>
+</svg>
