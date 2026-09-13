@@ -315,7 +315,7 @@ export default function Home() {
                 </div>
                 <div className="mt-element-gap-lg pt-element-gap-sm text-primary-container font-label-code text-xs flex items-center gap-1.5 border-t border-outline-variant/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary-container" />
-                  Week 1 • Specs &amp; Schema
+                  Sprint 01 • Architecture &amp; Specs
                 </div>
               </div>
 
@@ -327,15 +327,15 @@ export default function Home() {
                     02
                   </span>
                   <h3 className="font-headline-md text-lg text-primary font-bold mt-element-gap-sm mb-element-gap-xs group-hover:text-primary-container transition-colors">
-                    UX &amp; 3D Prototype
+                    UX &amp; Interactive Prototype
                   </h3>
                   <p className="font-body-sm text-xs md:text-sm text-on-surface-variant leading-relaxed">
-                    Interactive user flows, Figma component system, micro-interactions, and visual polish validated before writing production code.
+                    Interactive user flows, Figma component system, micro-interactions, and visual hierarchy validated before writing production code.
                   </p>
                 </div>
                 <div className="mt-element-gap-lg pt-element-gap-sm text-primary-container font-label-code text-xs flex items-center gap-1.5 border-t border-outline-variant/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary-container" />
-                  Week 2 • Figma Prototype
+                  Sprint 02 • Figma Interactive Prototype
                 </div>
               </div>
 
@@ -355,7 +355,7 @@ export default function Home() {
                 </div>
                 <div className="mt-element-gap-lg pt-element-gap-sm text-primary-container font-label-code text-xs flex items-center gap-1.5 border-t border-outline-variant/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary-container" />
-                  Weeks 3–5 • Live Staging URL
+                  Sprint 03 • Staging URL &amp; Loom Demos
                 </div>
               </div>
 
@@ -375,9 +375,28 @@ export default function Home() {
                 </div>
                 <div className="mt-element-gap-lg pt-element-gap-sm text-primary-container font-label-code text-xs flex items-center gap-1.5 border-t border-outline-variant/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary-container" />
-                  Final Week • Go-Live &amp; IP Transfer
+                  Sprint 04 • Production Launch &amp; IP Transfer
                 </div>
               </div>
+            </div>
+
+            {/* Timeline Scope & Complexity Note */}
+            <div className="mt-element-gap-lg p-4 rounded-xl bg-surface-container-low/90 border border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+              <div className="flex items-center gap-2.5">
+                <span className="material-symbols-outlined text-primary-container text-[20px] flex-shrink-0">
+                  info
+                </span>
+                <span className="font-body-sm text-xs md:text-sm text-on-surface-variant">
+                  <strong className="text-primary font-semibold">Sprint Cadence Note:</strong> Delivery timelines scale with architectural scope. High-converting landing pages typically ship in <strong className="text-primary">2–3 weeks</strong>; custom enterprise platforms run across <strong className="text-primary">4–8 week</strong> iterative sprint cycles.
+                </span>
+              </div>
+              <a
+                href="#quick-brief"
+                className="font-label-code text-xs text-primary-container font-semibold hover:underline whitespace-nowrap flex items-center gap-1 flex-shrink-0"
+              >
+                <span>Estimate Your Scope</span>
+                <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
             </div>
           </div>
         </section>
