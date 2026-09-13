@@ -116,11 +116,11 @@ export default function Home() {
               <div className="cyber-card group relative rounded-2xl bg-surface-container-low/80 border border-outline-variant/40 backdrop-blur-xl p-element-gap-xl shadow-xl flex flex-col justify-between overflow-hidden">
                 <div className="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/25 transition-all duration-500" />
                 <div>
-                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md">
-                    <span className="px-3 py-1 rounded-full bg-primary-container/15 text-primary-container font-label-code text-[11px] uppercase border border-primary-container/30">
-                      Best for: SaaS Product Launch • B2B Acquisition • Paid Campaigns
+                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md min-h-[32px]">
+                    <span className="px-3 py-1 rounded-full bg-primary-container/15 text-primary-container font-label-code text-[11px] uppercase border border-primary-container/30 truncate">
+                      Best for: SaaS Launch • B2B Lead Gen • Growth Funnels
                     </span>
-                    <span className="font-label-code text-xs text-on-surface-variant">PILLAR 01</span>
+                    <span className="font-label-code text-xs text-on-surface-variant flex-shrink-0">PILLAR 01</span>
                   </div>
 
                   <div className="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary-container mb-element-gap-md shadow-inner group-hover:scale-110 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all duration-300">
@@ -165,7 +165,7 @@ export default function Home() {
                         check_circle
                       </span>
                       <span className="font-body-sm text-sm text-on-surface">
-                        Native CRM &amp; Payment Gateway Integrations (Stripe, Midtrans, HubSpot)
+                        Payment Gateway Integrations (Midtrans &amp; Stripe-compatible architecture)
                       </span>
                     </div>
                   </div>
@@ -186,7 +186,7 @@ export default function Home() {
                       Three.js / WebGL
                     </span>
                     <span className="px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/30 text-primary font-label-code text-xs">
-                      Vercel Edge
+                      Vercel Cloud
                     </span>
                   </div>
                 </div>
@@ -196,11 +196,11 @@ export default function Home() {
               <div className="cyber-card group relative rounded-2xl bg-surface-container-low/80 border border-outline-variant/40 backdrop-blur-xl p-element-gap-xl shadow-xl flex flex-col justify-between overflow-hidden">
                 <div className="absolute -top-12 -right-12 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl group-hover:bg-secondary-container/35 transition-all duration-500" />
                 <div>
-                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md">
-                    <span className="px-3 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-code text-[11px] uppercase border border-secondary/30">
-                      Best for: Multi-Branch Portals • Operational ERP • SaaS Platforms
+                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md min-h-[32px]">
+                    <span className="px-3 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-code text-[11px] uppercase border border-secondary/30 truncate">
+                      Best for: Multi-Branch • Custom ERP • Internal Ops
                     </span>
-                    <span className="font-label-code text-xs text-on-surface-variant">PILLAR 02</span>
+                    <span className="font-label-code text-xs text-on-surface-variant flex-shrink-0">PILLAR 02</span>
                   </div>
 
                   <div className="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-secondary mb-element-gap-md shadow-inner group-hover:scale-110 group-hover:bg-secondary-container group-hover:text-secondary-fixed transition-all duration-300">

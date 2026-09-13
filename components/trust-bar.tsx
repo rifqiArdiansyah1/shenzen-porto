@@ -37,8 +37,8 @@ const techStack = [
   { name: "Supabase", tag: "Postgres Backend" },
   { name: "Prisma ORM", tag: "Relational Schema" },
   { name: "PostgreSQL", tag: "Enterprise DB" },
-  { name: "Vercel Edge", tag: "Global Infra" },
-  { name: "Midtrans & Stripe", tag: "Payment Gateways" },
+  { name: "Vercel Cloud", tag: "Production CI/CD" },
+  { name: "Midtrans Gateway", tag: "Payment Settlement" },
   { name: "Three.js / WebGL", tag: "3D Graphics" },
 ];
 
