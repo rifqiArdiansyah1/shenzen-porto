@@ -50,7 +50,7 @@ export default function Footer() {
               <div className="px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/40 flex items-center gap-1.5 hover:border-primary-container/40 transition-colors">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary-container animate-pulse" />
                 <span className="font-label-code text-xs text-on-surface-variant">
-                  Global (SGT/CST):{" "}
+                  Singapore (SGT):{" "}
                   <strong className="text-on-surface font-semibold">
                     UTC+8
                   </strong>
@@ -59,7 +59,7 @@ export default function Footer() {
               <div className="px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/40 flex items-center gap-1.5 hover:border-secondary/40 transition-colors">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary-fixed-dim animate-pulse" />
                 <span className="font-label-code text-xs text-on-surface-variant">
-                  US (EST):{" "}
+                  US East (EST):{" "}
                   <strong className="text-on-surface font-semibold">
                     UTC-5
                   </strong>
@@ -172,8 +172,8 @@ export default function Footer() {
               Engineering Dispatch
             </span>
             <p className="text-on-surface-variant font-body-sm text-xs leading-relaxed">
-              Receive our monthly engineering notes on web performance,
-              conversion architecture, and scalable full-stack patterns.
+              Get notified when we publish new production case studies,
+              architectural breakdowns, and performance benchmarks.
             </p>
             <form
               onSubmit={handleSubscribe}
@@ -215,9 +215,8 @@ export default function Footer() {
             <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors">
               NDA &amp; Privacy Terms
             </span>
-            <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary-container animate-pulse" />
-              System Status: Optimal
+            <span className="font-label-code text-xs text-on-surface-variant">
+              Independent Web Engineering Studio
             </span>
           </div>
         </div>

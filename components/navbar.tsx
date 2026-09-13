@@ -35,7 +35,7 @@ export default function Navbar() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-container" />
             </span>
             <span className="font-label-code text-[11px] text-primary tracking-wider uppercase">
-              Q2/Q3 Available
+              Accepting New Projects
             </span>
           </div>
         </div>

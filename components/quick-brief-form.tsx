@@ -93,6 +93,26 @@ export default function QuickBriefForm() {
               {/* Direct Alternative Channels */}
               <div className="pt-element-gap-sm flex flex-wrap gap-3">
                 <a
+                  href="https://cal.com/shenzenstudio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high border border-outline-variant/40 text-sm font-semibold text-primary hover:border-primary-container/40 hover:text-primary-container transition-all"
+                >
+                  <span className="material-symbols-outlined text-[18px] text-primary-container">
+                    calendar_month
+                  </span>
+                  <span>Book 15-Min Discovery Call</span>
+                </a>
+                <a
+                  href="mailto:hello@shenzenstudio.com"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high border border-outline-variant/40 text-sm font-semibold text-primary hover:border-primary-container/40 hover:text-primary-container transition-all"
+                >
+                  <span className="material-symbols-outlined text-[18px] text-primary-container">
+                    mail
+                  </span>
+                  <span>hello@shenzenstudio.com</span>
+                </a>
+                <a
                   href="https://wa.me/62895395392047"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -101,16 +121,7 @@ export default function QuickBriefForm() {
                   <span className="material-symbols-outlined text-[18px] text-green-400">
                     chat
                   </span>
-                  <span>WhatsApp Lead Engineer</span>
-                </a>
-                <a
-                  href="mailto:shenzen.studio@gmail.com"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high border border-outline-variant/40 text-sm font-semibold text-primary hover:border-primary-container/40 hover:text-primary-container transition-all"
-                >
-                  <span className="material-symbols-outlined text-[18px] text-primary-container">
-                    mail
-                  </span>
-                  <span>shenzen.studio@gmail.com</span>
+                  <span>WhatsApp Direct</span>
                 </a>
               </div>
             </div>
