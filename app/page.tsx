@@ -2,6 +2,8 @@ import ThreeMonolith from "@/components/three-monolith";
 import TrustBar from "@/components/trust-bar";
 import HeroMetrics from "@/components/hero-metrics";
 import PortfolioShowcase from "@/components/portfolio-showcase";
+import PricingTiers from "@/components/pricing-tiers";
+import FounderStory from "@/components/founder-story";
 import FAQAccordion from "@/components/faq-accordion";
 import QuickBriefForm from "@/components/quick-brief-form";
 import Footer from "@/components/footer";
@@ -116,8 +118,8 @@ export default function Home() {
               <div className="cyber-card group relative rounded-2xl bg-surface-container-low/80 border border-outline-variant/40 backdrop-blur-xl p-element-gap-xl shadow-xl flex flex-col justify-between overflow-hidden">
                 <div className="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/25 transition-all duration-500" />
                 <div>
-                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md min-h-[32px]">
-                    <span className="px-3 py-1 rounded-full bg-primary-container/15 text-primary-container font-label-code text-[11px] uppercase border border-primary-container/30 truncate">
+                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md min-h-[44px]">
+                    <span className="px-3 py-1.5 rounded-full bg-primary-container/15 text-primary-container font-label-code text-[11px] uppercase border border-primary-container/30 truncate">
                       Best for: SaaS Launch • B2B Lead Gen • Growth Funnels
                     </span>
                     <span className="font-label-code text-xs text-on-surface-variant flex-shrink-0">PILLAR 01</span>
@@ -165,7 +167,7 @@ export default function Home() {
                         check_circle
                       </span>
                       <span className="font-body-sm text-sm text-on-surface">
-                        Payment Gateway Integrations (Midtrans &amp; Stripe-compatible architecture)
+                        Payment Gateway Integrations (Midtrans production-tested, RESTful webhook architecture)
                       </span>
                     </div>
                   </div>
@@ -196,8 +198,8 @@ export default function Home() {
               <div className="cyber-card group relative rounded-2xl bg-surface-container-low/80 border border-outline-variant/40 backdrop-blur-xl p-element-gap-xl shadow-xl flex flex-col justify-between overflow-hidden">
                 <div className="absolute -top-12 -right-12 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl group-hover:bg-secondary-container/35 transition-all duration-500" />
                 <div>
-                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md min-h-[32px]">
-                    <span className="px-3 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-code text-[11px] uppercase border border-secondary/30 truncate">
+                  <div className="flex items-center justify-between gap-element-gap-sm mb-element-gap-md min-h-[44px]">
+                    <span className="px-3 py-1.5 rounded-full bg-secondary-container/30 text-secondary font-label-code text-[11px] uppercase border border-secondary/30 truncate">
                       Best for: Multi-Branch • Custom ERP • Internal Ops
                     </span>
                     <span className="font-label-code text-xs text-on-surface-variant flex-shrink-0">PILLAR 02</span>
@@ -276,9 +278,19 @@ export default function Home() {
         </section>
 
         {/* ===================================================================
+            TRANSPARENT PRICING & INVESTMENT TIERS
+        =================================================================== */}
+        <PricingTiers />
+
+        {/* ===================================================================
             4. FEATURED WORK & CASE STUDIES SHOWCASE
         =================================================================== */}
         <PortfolioShowcase />
+
+        {/* ===================================================================
+            ABOUT / FOUNDER (THE BOUTIQUE ENGINEERING ADVANTAGE)
+        =================================================================== */}
+        <FounderStory />
 
         {/* ===================================================================
             5. OUR WORK PROCESS (TRANSPARENT SPRINTS)
@@ -387,14 +399,14 @@ export default function Home() {
                   info
                 </span>
                 <span className="font-body-sm text-xs md:text-sm text-on-surface-variant">
-                  <strong className="text-primary font-semibold">Sprint Cadence Note:</strong> Delivery timelines scale with architectural scope. High-converting landing pages typically ship in <strong className="text-primary">2–3 weeks</strong>; custom enterprise platforms run across <strong className="text-primary">4–8 week</strong> iterative sprint cycles.
+                  <strong className="text-primary font-semibold">Sprint Cadence Note:</strong> Delivery timelines strictly align with architectural scope: Tier 1 Landing Pages ship in <strong className="text-primary">2–3 weeks</strong>; Tier 2 Custom Web Apps ship in <strong className="text-primary">4–6 weeks</strong>; and Tier 3 Enterprise Systems run across <strong className="text-primary">6–10 week</strong> iterative sprint cycles.
                 </span>
               </div>
               <a
-                href="#quick-brief"
+                href="#pricing-section"
                 className="font-label-code text-xs text-primary-container font-semibold hover:underline whitespace-nowrap flex items-center gap-1 flex-shrink-0"
               >
-                <span>Estimate Your Scope</span>
+                <span>View Pricing Tiers</span>
                 <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
               </a>
             </div>
@@ -482,16 +494,20 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card 2: Contractual Engineering & Handover Commitments */}
-              <div className="cyber-card p-element-gap-xl rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between shadow-md relative group">
-                <div>
+              {/* Card 2: Contractual Engineering & Handover Commitments (Visually Distinct SLA Box) */}
+              <div className="cyber-card p-element-gap-xl rounded-2xl bg-surface-container/95 border-2 border-secondary/40 shadow-[0_0_30px_rgba(219,184,255,0.07)] flex flex-col justify-between relative group overflow-hidden">
+                <span className="material-symbols-outlined absolute -bottom-6 -right-6 text-[140px] text-secondary/5 pointer-events-none select-none">
+                  gavel
+                </span>
+
+                <div className="relative z-10">
                   <div className="flex items-center justify-between gap-2 mb-element-gap-md">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/25 text-secondary border border-secondary/30 text-[11px] font-label-code font-semibold uppercase tracking-wider">
-                      <span className="material-symbols-outlined text-[14px]">shield</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-secondary border border-secondary/40 text-[11px] font-label-code font-bold uppercase tracking-wider">
+                      <span className="material-symbols-outlined text-[14px]">verified_user</span>
                       Contractual Engineering Standard
                     </span>
                     <span className="text-xs font-label-code text-outline">
-                      Shenzhen Studio Pledge
+                      Legal &amp; Engineering SLA
                     </span>
                   </div>
 
@@ -499,16 +515,16 @@ export default function Home() {
                     Direct Senior Engineering &amp; IP Protection
                   </h3>
                   <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant mb-element-gap-md leading-relaxed">
-                    We eliminate typical agency friction: zero junior account managers, zero hidden proprietary licensing fees, and no communication latency across sprint deliverables.
+                    Formal contractual terms applied to every project. We eliminate typical agency friction: zero junior account managers, zero hidden proprietary licensing fees, and guaranteed intellectual property assignment.
                   </p>
 
-                  <div className="space-y-2.5 p-3.5 rounded-xl bg-surface-container/60 border border-outline-variant/20 mb-element-gap-lg">
+                  <div className="space-y-2.5 p-3.5 rounded-xl bg-surface-container-high/70 border border-outline-variant/30 mb-element-gap-lg">
                     <div className="flex items-start gap-2.5 text-xs font-body-sm">
                       <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">
                         verified_user
                       </span>
                       <span className="text-on-surface">
-                        <strong className="text-primary">100% IP &amp; Code Handover:</strong> Clean GitHub repo rights, Figma assets, and cloud deployment pipelines transferred upon sign-off.
+                        <strong className="text-primary">100% IP &amp; Code Handover:</strong> Clean GitHub repo rights, Figma assets, and cloud deployment pipelines transferred upon final milestone sign-off.
                       </span>
                     </div>
                     <div className="flex items-start gap-2.5 text-xs font-body-sm">
@@ -516,7 +532,7 @@ export default function Home() {
                         terminal
                       </span>
                       <span className="text-on-surface">
-                        <strong className="text-primary">Direct Builder Access:</strong> Communicate directly with the senior engineer via Slack/WhatsApp with weekly Loom demos.
+                        <strong className="text-primary">Direct Builder Access:</strong> Communicate directly with the senior engineer via Slack/WhatsApp with weekly Loom video walkthroughs.
                       </span>
                     </div>
                     <div className="flex items-start gap-2.5 text-xs font-body-sm">
@@ -530,7 +546,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="pt-element-gap-md bg-surface-container-high/40 -mx-element-gap-xl -mb-element-gap-xl p-element-gap-lg rounded-b-2xl border-t border-outline-variant/30 flex items-center justify-between flex-wrap gap-2">
+                <div className="relative z-10 pt-element-gap-md bg-surface-container-high/60 -mx-element-gap-xl -mb-element-gap-xl p-element-gap-lg rounded-b-2xl border-t border-outline-variant/30 flex items-center justify-between flex-wrap gap-2">
                   <span className="font-label-code text-xs text-outline">
                     Standard Master Services Agreement
                   </span>

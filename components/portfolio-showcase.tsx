@@ -78,6 +78,36 @@ const projects: ShowcaseProject[] = [
       description:
         "DriveFlow is actively deployed and operational for multi-branch fleet management. The platform runs with atomic reservation locks to prevent schedule concurrency collisions, automated Midtrans payment webhook settlements, and sub-second relational queries.",
     },
+    architectureFlow: [
+      {
+        step: "01",
+        title: "Self-Service Catalog & Checkout",
+        description:
+          "Customer selects branch location, dates, and vehicle unit with real-time pricing (< 60s checkout).",
+        icon: "directions_car",
+      },
+      {
+        step: "02",
+        title: "Schedule Validation & Lock",
+        description:
+          "Database queries active reservations across branches and locks vehicle schedule to prevent concurrent double-bookings.",
+        icon: "lock_clock",
+      },
+      {
+        step: "03",
+        title: "Automated Payment Webhook",
+        description:
+          "Customer completes payment; Midtrans gateway sends instant webhook to confirm settlement on the server.",
+        icon: "webhook",
+      },
+      {
+        step: "04",
+        title: "Live Operations Sync",
+        description:
+          "Reservation is verified in Supabase/PostgreSQL; unit handover schedule updates on branch dispatch terminals.",
+        icon: "sync_alt",
+      },
+    ],
   },
 
   // 2. CONCEPT PROTOTYPE: FinPulse
@@ -336,13 +366,16 @@ export default function PortfolioShowcase() {
                   {/* Category Pill */}
                   <div className="absolute top-4 left-4 z-10 flex flex-wrap gap-2">
                     {project.isVerifiedClient ? (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-code text-[11px] font-bold uppercase tracking-wider shadow-md">
-                        <span className="w-1.5 h-1.5 rounded-full bg-surface animate-pulse" />
-                        Verified Client Project
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-code text-[11px] font-bold uppercase tracking-wider shadow-[0_0_15px_rgba(0,242,254,0.4)]">
+                        <span className="w-2 h-2 rounded-full bg-surface animate-pulse" />
+                        Verified Client Production
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md border border-outline-variant/40 text-on-surface font-label-code text-[11px] uppercase tracking-wider">
-                        Concept Prototype
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest/95 backdrop-blur-md border border-amber-500/50 text-amber-300 font-label-code text-[11px] font-semibold uppercase tracking-wider shadow-lg">
+                        <span className="material-symbols-outlined text-[14px] text-amber-400">
+                          science
+                        </span>
+                        Internal R&amp;D Concept
                       </span>
                     )}
                   </div>

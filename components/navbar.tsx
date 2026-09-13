@@ -44,37 +44,49 @@ export default function Navbar() {
         <nav className="hidden lg:flex items-center gap-1 p-1 rounded-full bg-surface-container-lowest/70 backdrop-blur-md border border-outline-variant/40">
           <a
             href="#services"
-            className="px-4 py-2 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
           >
             Services
           </a>
           <a
-            href="#featured-works"
-            className="px-4 py-2 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+            href="#pricing-section"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
           >
-            Work / Showcase
+            Pricing
+          </a>
+          <a
+            href="#featured-works"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+          >
+            Work
+          </a>
+          <a
+            href="#about"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+          >
+            About
           </a>
           <a
             href="#process-section"
-            className="px-4 py-2 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
           >
-            Tech Stack &amp; Process
+            Process
           </a>
           <a
             href="#testimonials-section"
-            className="px-4 py-2 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
           >
-            Impact &amp; Case Studies
+            Impact
           </a>
           <a
             href="#faq-section"
-            className="px-4 py-2 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
           >
             FAQ
           </a>
           <a
             href="#quick-brief"
-            className="px-4 py-2 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
+            className="px-3.5 py-1.5 rounded-full font-body-sm text-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all duration-200"
           >
             Contact
           </a>
@@ -114,11 +126,25 @@ export default function Navbar() {
             Services
           </a>
           <a
+            href="#pricing-section"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
+          >
+            Pricing Tiers
+          </a>
+          <a
             href="#featured-works"
             onClick={() => setMobileMenuOpen(false)}
             className="px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
           >
             Work / Showcase
+          </a>
+          <a
+            href="#about"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
+          >
+            About / Boutique Model
           </a>
           <a
             href="#process-section"

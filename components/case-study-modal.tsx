@@ -19,6 +19,12 @@ export interface CaseStudyData {
     before: string;
     after: string;
   }[];
+  architectureFlow?: {
+    step: string;
+    title: string;
+    description: string;
+    icon: string;
+  }[];
   deploymentVerification?: {
     headline: string;
     description: string;
@@ -80,8 +86,11 @@ export default function CaseStudyModal({
                 Verified Client Case Study
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant border border-outline-variant/40 text-[11px] font-label-code uppercase tracking-wider">
-                Technical Exploration
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest border border-amber-500/40 text-amber-300 text-[11px] font-label-code font-semibold uppercase tracking-wider">
+                <span className="material-symbols-outlined text-[13px] text-amber-400">
+                  science
+                </span>
+                Internal R&amp;D Concept
               </span>
             )}
             <span className="text-xs font-label-code text-outline hidden sm:inline-block">
@@ -181,6 +190,44 @@ export default function CaseStudyModal({
               ))}
             </div>
           </div>
+
+          {/* Section: Operational Architecture & Transactional Pipeline */}
+          {data.architectureFlow && data.architectureFlow.length > 0 && (
+            <div className="space-y-3">
+              <h3 className="font-headline-md text-sm font-bold uppercase tracking-wider text-primary-container flex items-center gap-2">
+                <span className="material-symbols-outlined text-[18px]">
+                  account_tree
+                </span>
+                Verified System &amp; Operational Flow
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {data.architectureFlow.map((flowStep, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3.5 rounded-xl bg-surface-container/60 border border-outline-variant/30 flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="material-symbols-outlined text-primary-container text-[20px]">
+                          {flowStep.icon}
+                        </span>
+                        <span className="font-label-code text-[11px] font-bold text-outline">
+                          STEP {flowStep.step}
+                        </span>
+                      </div>
+                      <h4 className="font-headline-sm text-xs font-bold text-primary mb-1">
+                        {flowStep.title}
+                      </h4>
+                      <p className="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                        {flowStep.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Section: Key Results (Before vs After Table) */}
           <div className="space-y-3">

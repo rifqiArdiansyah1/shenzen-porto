@@ -11,13 +11,23 @@ const faqs: FAQItem[] = [
   {
     question: "What is the typical turnaround timeline for a project?",
     answer:
-      "For High-Converting Landing Pages, delivery typically spans 2 to 3 weeks from technical discovery to production deployment. For Custom Web Applications (such as multi-branch booking platforms, operational dashboards, or SaaS portals), sprints typically run 4 to 8 weeks depending on database schema depth and third-party API integrations.",
+      "Delivery timelines strictly align with architectural scope across three structured sprint tiers: (1) Sprint Landing Pages typically ship in 2 to 3 weeks from discovery to production deployment; (2) Custom Web Applications & MVPs span 4 to 6 weeks with automated payment webhooks and RBAC; and (3) Enterprise Architecture & Multi-Tenant Systems run across 6 to 10 weeks of iterative milestone sprints.",
+  },
+  {
+    question: "What is your milestone and payment schedule?",
+    answer:
+      "We operate with a transparent 3-part milestone framework: 50% upfront deposit to secure sprint booking and initiate architectural discovery; 25% upon functional staging preview and interactive walkthrough; and the final 25% upon production deployment, domain cutover, and 100% GitHub IP handover.",
   },
   {
     question:
       "Do we receive 100% ownership of the source code and intellectual property?",
     answer:
       "Yes, absolutely. Upon final project completion, all intellectual property (IP), clean GitHub/GitLab repositories, Figma design assets, and cloud deployment pipelines are transferred entirely to your organization with zero vendor lock-in. A mutual Non-Disclosure Agreement (NDA) is executed prior to sharing any project credentials.",
+  },
+  {
+    question: "How do you handle scope changes or feature requests mid-sprint?",
+    answer:
+      "We use an agile, modular change-order framework. If you identify new requirements mid-flight, we assess the architectural impact and provide an itemized mini-milestone addendum with clear cost and timeline estimates. This protects your core production go-live date while allowing seamless iterative expansion.",
   },
   {
     question:

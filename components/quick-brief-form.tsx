@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function QuickBriefForm() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,27 @@ export default function QuickBriefForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  useEffect(() => {
+    const handleTierSelection = (e: Event) => {
+      const customEvent = e as CustomEvent<{
+        budget?: string;
+        projectType?: string;
+      }>;
+      if (customEvent.detail) {
+        setFormData((prev) => ({
+          ...prev,
+          budget: customEvent.detail.budget || prev.budget,
+          projectType: customEvent.detail.projectType || prev.projectType,
+        }));
+      }
+    };
+
+    window.addEventListener("select-pricing-tier", handleTierSelection);
+    return () => {
+      window.removeEventListener("select-pricing-tier", handleTierSelection);
+    };
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -189,16 +210,16 @@ export default function QuickBriefForm() {
                       className="w-full px-element-gap-md py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-primary font-body-sm text-sm focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/30 transition-all shadow-inner"
                     >
                       <option value="landing-page">
-                        High-Converting Landing Page
+                        Sprint Landing Page (2–3 Weeks)
                       </option>
                       <option value="custom-app">
-                        Custom Web Application / Portal
+                        Custom Web App / MVP (4–6 Weeks)
                       </option>
                       <option value="fullstack-mvp">
-                        Bespoke SaaS / MVP Sprint
+                        Enterprise Architecture (6–10 Weeks)
                       </option>
                       <option value="architecture-audit">
-                        Architecture &amp; Speed Audit
+                        Architecture &amp; Performance Audit
                       </option>
                     </select>
                   </div>
@@ -219,16 +240,16 @@ export default function QuickBriefForm() {
                       className="w-full px-element-gap-md py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-primary font-body-sm text-sm focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/30 transition-all shadow-inner"
                     >
                       <option value="1500-3000">
-                        $1,500 – $3,000 (Landing Page)
+                        $1,500 – $3,000 (Sprint Landing Page)
                       </option>
                       <option value="3000-6000">
-                        $3,000 – $6,000 (Custom Web App)
+                        $3,000 – $6,000 (Custom Web App / MVP)
                       </option>
                       <option value="6000+">
-                        $6,000+ (Multi-Branch Platform)
+                        $6,000+ (Enterprise Architecture)
                       </option>
                       <option value="undecided">
-                        To be determined / Advisory
+                        To be determined / Technical Advisory
                       </option>
                     </select>
                   </div>

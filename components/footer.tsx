@@ -2,10 +2,12 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import LegalModals, { LegalModalType } from "./legal-modals";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [legalModal, setLegalModal] = useState<LegalModalType>(null);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -209,18 +211,32 @@ export default function Footer() {
             reserved. Built for international reliability.
           </span>
           <div className="flex items-center gap-element-gap-lg">
-            <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors">
+            <button
+              type="button"
+              onClick={() => setLegalModal("security")}
+              className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors bg-transparent border-none p-0"
+            >
               Security Standards
-            </span>
-            <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors">
+            </button>
+            <button
+              type="button"
+              onClick={() => setLegalModal("terms")}
+              className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors bg-transparent border-none p-0"
+            >
               NDA &amp; Privacy Terms
-            </span>
+            </button>
             <span className="font-label-code text-xs text-on-surface-variant">
               Independent Web Engineering Studio
             </span>
           </div>
         </div>
       </div>
+
+      {/* Accessible Legal & Security Standards Modal */}
+      <LegalModals
+        activeModal={legalModal}
+        onClose={() => setLegalModal(null)}
+      />
     </footer>
   );
 }
