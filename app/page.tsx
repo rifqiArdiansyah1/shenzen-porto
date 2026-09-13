@@ -402,74 +402,145 @@ export default function Home() {
         </section>
 
         {/* ===================================================================
-            6. VERIFIED OUTCOMES & COLLABORATION STANDARDS
+            6. VERIFIED DEPLOYMENT IMPACT & CONTRACTUAL COMMITMENTS
         =================================================================== */}
         <section className="w-full py-section-gap-md bg-surface-container-lowest/70 border-t border-outline-variant/20" id="testimonials-section">
           <div className="max-w-[1280px] mx-auto px-grid-gutter-mobile md:px-grid-gutter-tablet lg:px-grid-gutter-desktop">
             <div className="max-w-2xl mb-element-gap-xl">
               <div className="inline-flex items-center gap-2 text-primary-container font-label-code text-xs tracking-widest uppercase mb-1">
                 <span className="w-2 h-2 rounded-full bg-primary-container animate-pulse" />
-                PROVEN RESULTS &amp; PRINCIPLES
+                VERIFIED DEPLOYMENT &amp; TERMS
               </div>
               <h2 className="font-headline-lg text-2xl md:text-3xl lg:text-4xl text-primary font-bold">
-                Software Evaluated by Measurable Outcomes
+                Grounded in Operational Results. Protected by Legally Backed Terms.
               </h2>
+              <p className="font-body-md text-sm md:text-base text-on-surface-variant mt-2">
+                We evaluate software by verified operational efficiency in production, and govern every engagement with strict IP ownership and transparent handover agreements.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-element-gap-xl">
-              {/* Authentic Client Case Study Outcome: CV Rental Mobil */}
+              {/* Card 1: Verified Live Client Deployment Case (DriveFlow) */}
               <div className="cyber-card p-element-gap-xl rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between shadow-md relative group">
-                <span className="material-symbols-outlined text-outline-variant group-hover:text-primary-container transition-colors text-[44px] mb-element-gap-sm">
-                  format_quote
-                </span>
-                <p className="font-body-lg text-base md:text-lg text-on-surface italic mb-element-gap-lg leading-relaxed">
-                  &ldquo;DriveFlow completely eliminated our vehicle double-booking headaches across branches. Our staff no longer spends hours manually checking transfer slips, and clients can lock in their rental in under a minute.&rdquo;
-                </p>
-                <div className="flex items-center justify-between gap-element-gap-sm pt-element-gap-md bg-surface-container-high/40 -mx-element-gap-xl -mb-element-gap-xl p-element-gap-lg rounded-b-2xl border-t border-outline-variant/30">
-                  <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full bg-primary-container/20 border border-primary-container/40 flex items-center justify-center text-primary-container font-headline-md font-bold group-hover:scale-110 transition-transform">
-                      RM
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-element-gap-md">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/15 text-primary-container border border-primary-container/30 text-[11px] font-label-code font-semibold uppercase tracking-wider">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse" />
+                      Verified Production Deployment
+                    </span>
+                    <span className="text-xs font-label-code text-outline">
+                      Automotive Logistics
+                    </span>
+                  </div>
+
+                  <h3 className="font-headline-lg text-xl md:text-2xl font-bold text-primary mb-element-gap-xs group-hover:text-primary-container transition-colors">
+                    DriveFlow Multi-Branch Car Rental Platform
+                  </h3>
+                  <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant mb-element-gap-md leading-relaxed">
+                    Engineered and deployed a centralized digital reservation engine for a regional fleet operator with multiple branch locations, eliminating phone-based double-bookings and automating payment settlements.
+                  </p>
+
+                  <div className="space-y-2.5 p-3.5 rounded-xl bg-surface-container/60 border border-outline-variant/20 mb-element-gap-lg">
+                    <div className="flex items-start gap-2.5 text-xs font-body-sm">
+                      <span className="material-symbols-outlined text-primary-container text-[18px] mt-0.5">
+                        check_circle
+                      </span>
+                      <span className="text-on-surface">
+                        <strong className="text-primary">0 Scheduling Overlaps:</strong> Atomic cross-branch availability locking prevented duplicate unit reservations.
+                      </span>
                     </div>
-                    <div>
-                      <div className="font-headline-md text-sm md:text-base font-bold text-primary group-hover:text-primary-container transition-colors">
-                        Operations Lead
-                      </div>
-                      <div className="font-body-sm text-xs text-on-surface-variant">
-                        CV Rental Mobil (DriveFlow Platform)
-                      </div>
+                    <div className="flex items-start gap-2.5 text-xs font-body-sm">
+                      <span className="material-symbols-outlined text-primary-container text-[18px] mt-0.5">
+                        check_circle
+                      </span>
+                      <span className="text-on-surface">
+                        <strong className="text-primary">&lt; 60s Online Checkout:</strong> Direct customer reservation engine replaced 15–30 min phone coordination.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-2.5 text-xs font-body-sm">
+                      <span className="material-symbols-outlined text-primary-container text-[18px] mt-0.5">
+                        check_circle
+                      </span>
+                      <span className="text-on-surface">
+                        <strong className="text-primary">100% Automated Reconciliation:</strong> Real-time payment gateway webhooks replaced manual bank transfer receipts.
+                      </span>
                     </div>
                   </div>
-                  <span className="hidden sm:inline-flex px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30 text-[11px] font-label-code text-primary-container">
-                    Verified Production
+                </div>
+
+                <div className="pt-element-gap-md bg-surface-container-high/40 -mx-element-gap-xl -mb-element-gap-xl p-element-gap-lg rounded-b-2xl border-t border-outline-variant/30 flex items-center justify-between flex-wrap gap-2">
+                  <span className="font-label-code text-xs text-outline">
+                    Next.js 15 • Supabase • Prisma • Midtrans
                   </span>
+                  <a
+                    href="#featured-works"
+                    className="inline-flex items-center gap-1 text-xs font-label-code text-primary-container font-semibold hover:underline"
+                  >
+                    <span>Inspect Case Study</span>
+                    <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  </a>
                 </div>
               </div>
 
-              {/* Direct Engineering Commitment */}
+              {/* Card 2: Contractual Engineering & Handover Commitments */}
               <div className="cyber-card p-element-gap-xl rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between shadow-md relative group">
-                <span className="material-symbols-outlined text-outline-variant group-hover:text-secondary transition-colors text-[44px] mb-element-gap-sm">
-                  verified
-                </span>
-                <p className="font-body-lg text-base md:text-lg text-on-surface italic mb-element-gap-lg leading-relaxed">
-                  &ldquo;Working directly with a dedicated senior full-stack engineer—without account managers or agency overhead—means immediate feedback loops, zero miscommunication, and high-velocity shipping on a modern, maintainable codebase.&rdquo;
-                </p>
-                <div className="flex items-center justify-between gap-element-gap-sm pt-element-gap-md bg-surface-container-high/40 -mx-element-gap-xl -mb-element-gap-xl p-element-gap-lg rounded-b-2xl border-t border-outline-variant/30">
-                  <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full bg-secondary/20 border border-secondary/40 flex items-center justify-center text-secondary font-headline-md font-bold group-hover:scale-110 transition-transform">
-                      SZ
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-element-gap-md">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/25 text-secondary border border-secondary/30 text-[11px] font-label-code font-semibold uppercase tracking-wider">
+                      <span className="material-symbols-outlined text-[14px]">shield</span>
+                      Contractual Engineering Standard
+                    </span>
+                    <span className="text-xs font-label-code text-outline">
+                      Shenzhen Studio Pledge
+                    </span>
+                  </div>
+
+                  <h3 className="font-headline-lg text-xl md:text-2xl font-bold text-primary mb-element-gap-xs group-hover:text-secondary transition-colors">
+                    Direct Senior Engineering &amp; IP Protection
+                  </h3>
+                  <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant mb-element-gap-md leading-relaxed">
+                    We eliminate typical agency friction: zero junior account managers, zero hidden proprietary licensing fees, and no communication latency across sprint deliverables.
+                  </p>
+
+                  <div className="space-y-2.5 p-3.5 rounded-xl bg-surface-container/60 border border-outline-variant/20 mb-element-gap-lg">
+                    <div className="flex items-start gap-2.5 text-xs font-body-sm">
+                      <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">
+                        verified_user
+                      </span>
+                      <span className="text-on-surface">
+                        <strong className="text-primary">100% IP &amp; Code Handover:</strong> Clean GitHub repo rights, Figma assets, and cloud deployment pipelines transferred upon sign-off.
+                      </span>
                     </div>
-                    <div>
-                      <div className="font-headline-md text-sm md:text-base font-bold text-primary group-hover:text-secondary transition-colors">
-                        Engineering Guarantee
-                      </div>
-                      <div className="font-body-sm text-xs text-on-surface-variant">
-                        Shenzhen Studio Core Standard
-                      </div>
+                    <div className="flex items-start gap-2.5 text-xs font-body-sm">
+                      <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">
+                        terminal
+                      </span>
+                      <span className="text-on-surface">
+                        <strong className="text-primary">Direct Builder Access:</strong> Communicate directly with the senior engineer via Slack/WhatsApp with weekly Loom demos.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-2.5 text-xs font-body-sm">
+                      <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">
+                        lock
+                      </span>
+                      <span className="text-on-surface">
+                        <strong className="text-primary">Mutual NDA &amp; 30-Day Warranty:</strong> Standard NDA executed before credential exchange; complimentary 30-day bug warranty included.
+                      </span>
                     </div>
                   </div>
-                  <span className="hidden sm:inline-flex px-2.5 py-1 rounded bg-secondary/10 border border-secondary/30 text-[11px] font-label-code text-secondary">
-                    Direct Access
+                </div>
+
+                <div className="pt-element-gap-md bg-surface-container-high/40 -mx-element-gap-xl -mb-element-gap-xl p-element-gap-lg rounded-b-2xl border-t border-outline-variant/30 flex items-center justify-between flex-wrap gap-2">
+                  <span className="font-label-code text-xs text-outline">
+                    Standard Master Services Agreement
                   </span>
+                  <a
+                    href="#faq-section"
+                    className="inline-flex items-center gap-1 text-xs font-label-code text-secondary font-semibold hover:underline"
+                  >
+                    <span>Read Terms in FAQ</span>
+                    <span className="material-symbols-outlined text-[14px]">arrow_downward</span>
+                  </a>
                 </div>
               </div>
             </div>

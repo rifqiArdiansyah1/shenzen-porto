@@ -73,11 +73,10 @@ const projects: ShowcaseProject[] = [
         after: "Unified real-time fleet availability dashboard",
       },
     ],
-    testimonial: {
-      quote:
-        "DriveFlow completely eliminated our double-booking headaches across branches. Our staff no longer spends hours checking transfer slips, and customers can lock in their rental in under a minute.",
-      author: "Operations Lead",
-      title: "CV Rental Mobil",
+    deploymentVerification: {
+      headline: "Active Live Production Deployment",
+      description:
+        "DriveFlow is actively deployed and operational for multi-branch fleet management. The platform runs with atomic reservation locks to prevent schedule concurrency collisions, automated Midtrans payment webhook settlements, and sub-second relational queries.",
     },
   },
 

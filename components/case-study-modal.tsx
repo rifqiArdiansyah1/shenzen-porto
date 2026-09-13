@@ -19,6 +19,10 @@ export interface CaseStudyData {
     before: string;
     after: string;
   }[];
+  deploymentVerification?: {
+    headline: string;
+    description: string;
+  };
   testimonial?: {
     quote: string;
     author: string;
@@ -227,7 +231,22 @@ export default function CaseStudyModal({
             </div>
           </div>
 
-          {/* Client Testimonial (if available) */}
+          {/* Verified Operational Deployment Status */}
+          {data.deploymentVerification && (
+            <div className="p-5 rounded-xl bg-surface-container-high/60 border border-primary-container/30 relative">
+              <div className="flex items-center gap-2 text-primary-container font-label-code text-xs uppercase tracking-wider mb-2">
+                <span className="material-symbols-outlined text-[18px]">
+                  verified
+                </span>
+                <span className="font-bold">{data.deploymentVerification.headline}</span>
+              </div>
+              <p className="font-body-md text-sm text-on-surface leading-relaxed">
+                {data.deploymentVerification.description}
+              </p>
+            </div>
+          )}
+
+          {/* Client Testimonial (if available and authorized) */}
           {data.testimonial && (
             <div className="p-5 rounded-xl bg-surface-container-high/60 border border-primary-container/20 relative">
               <span className="material-symbols-outlined text-primary-container/40 text-[32px] absolute top-3 right-4">
