@@ -25,9 +25,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shenzhen Studio — High-Performing Web Interfaces & Custom Apps",
+  title: "Shenzhen Studio — High-Performance Web Engineering & Custom Software",
   description:
-    "We architect high-converting landing pages and scalable custom web applications. Built to accelerate business growth with zero-compromise engineering craft.",
+    "We architect high-converting landing pages and scalable custom web applications for founders and growing businesses worldwide. Sub-second performance, clean TypeScript, and full IP ownership.",
+  keywords: [
+    "Next.js agency",
+    "custom web applications",
+    "high-converting landing pages",
+    "full-stack engineer",
+    "React TypeScript developer",
+    "Supabase PostgreSQL",
+    "modern web development",
+  ],
   icons: {
     icon: "/logo.svg",
   },
@@ -39,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="dark scroll-smooth">
+    <html lang="en" className="dark scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -35,34 +35,43 @@ export default function Footer() {
               </div>
               <span className="font-headline-md text-lg text-primary tracking-tight uppercase font-bold">
                 SHENZHEN
-                <span className="text-primary-container font-light ml-1">STUDIO</span>
+                <span className="text-primary-container font-light ml-1">
+                  STUDIO
+                </span>
               </span>
             </div>
 
             <p className="text-on-surface-variant font-body-md text-sm max-w-sm leading-relaxed">
-              Engineering Tomorrow&apos;s High-Performing Web Interfaces &amp; Custom Apps with zero-compromise architectural craft.
+              Engineering high-converting web platforms and scalable bespoke
+              applications with zero-compromise architectural craft.
             </p>
 
             <div className="flex flex-wrap items-center gap-2 pt-1">
               <div className="px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/40 flex items-center gap-1.5 hover:border-primary-container/40 transition-colors">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary-container animate-pulse" />
                 <span className="font-label-code text-xs text-on-surface-variant">
-                  Shenzhen (CST): <strong className="text-on-surface font-semibold">UTC+8</strong>
+                  Global (SGT/CST):{" "}
+                  <strong className="text-on-surface font-semibold">
+                    UTC+8
+                  </strong>
                 </span>
               </div>
               <div className="px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/40 flex items-center gap-1.5 hover:border-secondary/40 transition-colors">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary-fixed-dim animate-pulse" />
                 <span className="font-label-code text-xs text-on-surface-variant">
-                  Jakarta (WIB): <strong className="text-on-surface font-semibold">UTC+7</strong>
+                  US (EST):{" "}
+                  <strong className="text-on-surface font-semibold">
+                    UTC-5
+                  </strong>
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Column 2: Layanan */}
+          {/* Column 2: Core Services */}
           <div className="lg:col-span-2 flex flex-col gap-element-gap-sm">
             <span className="font-label-code text-xs text-primary uppercase tracking-wider font-semibold">
-              Layanan
+              Core Services
             </span>
             <ul className="flex flex-col gap-2">
               <li>
@@ -70,7 +79,7 @@ export default function Footer() {
                   href="#services"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  High-Conversion Landing Page
+                  High-Conversion Landing Pages
                 </a>
               </li>
               <li>
@@ -78,7 +87,7 @@ export default function Footer() {
                   href="#services"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  Enterprise Custom Web Apps
+                  Custom Enterprise Web Apps
                 </a>
               </li>
               <li>
@@ -94,7 +103,7 @@ export default function Footer() {
                   href="#services"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  Design Systems &amp; UX Matrix
+                  Design Systems &amp; 3D WebGL
                 </a>
               </li>
               <li>
@@ -102,16 +111,16 @@ export default function Footer() {
                   href="#services"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  Performance &amp; Core Web Vitals
+                  Core Web Vitals Optimization
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Stack & Portofolio */}
+          {/* Column 3: Showcase & Stack */}
           <div className="lg:col-span-2 flex flex-col gap-element-gap-sm">
             <span className="font-label-code text-xs text-primary uppercase tracking-wider font-semibold">
-              Portofolio &amp; Stack
+              Architecture &amp; Stack
             </span>
             <ul className="flex flex-col gap-2">
               <li>
@@ -119,7 +128,7 @@ export default function Footer() {
                   href="#featured-works"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  Next.js 16 &amp; RSC
+                  Next.js 15+ App Router
                 </a>
               </li>
               <li>
@@ -135,7 +144,7 @@ export default function Footer() {
                   href="#featured-works"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  Tailwind CSS Cybernetic
+                  Supabase &amp; Prisma ORM
                 </a>
               </li>
               <li>
@@ -151,7 +160,7 @@ export default function Footer() {
                   href="#featured-works"
                   className="text-on-surface-variant font-body-sm text-xs hover:text-primary-container transition-colors"
                 >
-                  PostgreSQL Architecture
+                  Tailwind CSS v4
                 </a>
               </li>
             </ul>
@@ -160,12 +169,16 @@ export default function Footer() {
           {/* Column 4: Newsletter Dispatch */}
           <div className="lg:col-span-4 flex flex-col gap-element-gap-md">
             <span className="font-label-code text-xs text-primary uppercase tracking-wider font-semibold">
-              Tech Insights Dispatch
+              Engineering Dispatch
             </span>
             <p className="text-on-surface-variant font-body-sm text-xs leading-relaxed">
-              Dapatkan briefing bulanan tentang architectural trends, conversion telemetry, dan performance engineering.
+              Receive our monthly engineering notes on web performance,
+              conversion architecture, and scalable full-stack patterns.
             </p>
-            <form onSubmit={handleSubscribe} className="flex items-center gap-2">
+            <form
+              onSubmit={handleSubscribe}
+              className="flex items-center gap-2"
+            >
               <input
                 type="email"
                 required
@@ -183,7 +196,7 @@ export default function Footer() {
             </form>
             {isSubscribed && (
               <p className="font-label-code text-xs text-primary-container animate-fadeIn">
-                ✓ Terima kasih telah berlangganan Dispatch Shenzhen Studio!
+                ✓ Thank you for subscribing to Shenzhen Studio Dispatch!
               </p>
             )}
           </div>
@@ -192,14 +205,15 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-element-gap-lg border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-element-gap-md">
           <span className="font-label-code text-xs text-outline">
-            © {new Date().getFullYear()} Shenzhen Studio. All rights reserved. Precision Built for Global Scale.
+            &copy; {new Date().getFullYear()} Shenzhen Studio. All rights
+            reserved. Built for international reliability.
           </span>
           <div className="flex items-center gap-element-gap-lg">
             <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors">
-              Security Protocol
+              Security Standards
             </span>
             <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors">
-              Privacy Policy
+              NDA &amp; Privacy Terms
             </span>
             <span className="font-label-code text-xs text-on-surface-variant hover:text-primary-container cursor-pointer transition-colors flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-primary-container animate-pulse" />

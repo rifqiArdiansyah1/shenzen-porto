@@ -9,19 +9,26 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: "Berapa lama estimasi durasi pengerjaan proyek?",
+    question: "What is the typical turnaround timeline for a project?",
     answer:
-      "Untuk High-Converting Landing Page, pengerjaan biasanya berkisar antara 2 hingga 3 minggu penuh dari riset hingga go-live. Untuk Custom Enterprise Web Applications (seperti dashboard internal, ERP kustom, portal multi-user), estimasi berkisar 4 hingga 8 minggu tergantung kompleksitas integrasi sistem.",
+      "For High-Converting Landing Pages, delivery typically spans 2 to 3 weeks from technical discovery to production deployment. For Custom Web Applications (such as multi-branch booking platforms, operational dashboards, or SaaS portals), sprints typically run 4 to 8 weeks depending on database schema depth and third-party API integrations.",
   },
   {
-    question: "Apakah kode sumber (source code) dan aset 100% menjadi milik klien?",
+    question:
+      "Do we receive 100% ownership of the source code and intellectual property?",
     answer:
-      "Tentu. Setelah pembayaran lunas, seluruh hak kekayaan intelektual (IP), repositori Git (GitHub/GitLab), aset desain Figma, dan konfigurasi arsitektur cloud diserahkan 100% kepada pihak klien tanpa ikatan lisensi tersembunyi.",
+      "Yes, absolutely. Upon final project completion, all intellectual property (IP), clean GitHub/GitLab repositories, Figma design assets, and cloud deployment pipelines are transferred entirely to your organization with zero vendor lock-in. A mutual Non-Disclosure Agreement (NDA) is executed prior to sharing any project credentials.",
   },
   {
-    question: "Bagaimana standar keamanan data dan jaminan pasca-peluncuran?",
+    question:
+      "How do you handle cross-timezone communication and sprint cadence?",
     answer:
-      "Setiap aplikasi dibangun dengan enkripsi data rest & transit, proteksi CSRF/XSS, dan prinsip least privilege. Kami juga memberikan garansi pemeliharaan & bug-fixing gratis selama 30-60 hari setelah peluncuran untuk memastikan stabilitas sistem Anda.",
+      "We operate with an asynchronous-first communication cadence tailored for founders in North America (EST/PST), Europe (GMT/CET), and APAC. You receive regular Loom video demos, clear GitHub PR progress, and direct access via Slack or WhatsApp with overlapping working hours scheduled for milestone checkpoints.",
+  },
+  {
+    question: "What post-launch warranty and technical support are included?",
+    answer:
+      "Every production build includes a complimentary 30-day post-launch warranty covering any bug fixes, performance regressions, and infrastructure fine-tuning. We also supply clear architectural documentation and a personalized walkthrough video to ensure complete autonomy for your engineering team.",
   },
 ];
 
@@ -33,16 +40,23 @@ export default function FAQAccordion() {
   };
 
   return (
-    <section className="w-full py-section-gap-md lg:py-section-gap-lg" id="faq-section">
+    <section
+      className="w-full py-section-gap-md lg:py-section-gap-lg"
+      id="faq-section"
+    >
       <div className="max-w-[880px] mx-auto px-grid-gutter-mobile md:px-grid-gutter-tablet">
         <div className="text-center mb-element-gap-xl">
           <div className="inline-flex items-center gap-2 text-primary-container font-label-code text-xs tracking-widest uppercase mb-1">
             <span className="w-2 h-2 rounded-full bg-primary-container animate-pulse" />
-            PERTANYAAN UMUM
+            FREQUENTLY ASKED QUESTIONS
           </div>
           <h2 className="font-headline-lg text-2xl md:text-3xl lg:text-4xl text-primary font-bold">
-            Transparansi Penuh Sebelum Kita Memulai
+            Transparent Collaboration Terms
           </h2>
+          <p className="font-body-md text-sm md:text-base text-on-surface-variant mt-2 max-w-xl mx-auto">
+            Clear answers to common questions about engineering standards, IP
+            handover, and international remote workflow.
+          </p>
         </div>
 
         <div className="space-y-element-gap-sm">
