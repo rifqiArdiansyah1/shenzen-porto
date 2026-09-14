@@ -134,17 +134,18 @@ export default function PricingTiers() {
                   : "bg-surface-container-low/75 border border-outline-variant/40 shadow-lg"
               }`}
             >
-              {/* Popular Badge */}
+              {/* Popular / Tier Highlight Badge */}
               {tier.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-max max-w-[90%] flex justify-center pointer-events-none">
                   <span
-                    className={`px-3 py-1 rounded-full font-label-code text-[11px] uppercase tracking-wider font-semibold shadow-md ${
+                    className={`inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full font-label-code text-[10.5px] sm:text-[11px] uppercase tracking-wider font-bold shadow-lg whitespace-nowrap leading-tight ${
                       tier.isPopular
-                        ? "bg-gradient-to-r from-primary-container to-primary-fixed text-on-primary-container border border-primary-container"
-                        : "bg-surface-container-highest text-secondary border border-secondary/40"
+                        ? "bg-gradient-to-r from-primary-container to-primary-fixed text-on-primary-container border border-primary-container shadow-[0_0_20px_rgba(0,242,254,0.35)]"
+                        : "bg-surface-container-highest text-secondary border border-secondary/50 shadow-[0_0_15px_rgba(219,184,255,0.15)]"
                     }`}
                   >
-                    ✦ {tier.badge}
+                    <span>✦</span>
+                    <span>{tier.badge}</span>
                   </span>
                 </div>
               )}

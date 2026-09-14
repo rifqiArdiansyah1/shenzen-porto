@@ -366,12 +366,12 @@ export default function PortfolioShowcase() {
                   {/* Category Pill */}
                   <div className="absolute top-4 left-4 z-10 flex flex-wrap gap-2">
                     {project.isVerifiedClient ? (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-code text-[11px] font-bold uppercase tracking-wider shadow-[0_0_15px_rgba(0,242,254,0.4)]">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-code text-[11px] font-bold uppercase tracking-wider shadow-[0_0_15px_rgba(0,242,254,0.4)] whitespace-nowrap">
                         <span className="w-2 h-2 rounded-full bg-surface animate-pulse" />
                         Verified Client Production
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest/95 backdrop-blur-md border border-amber-500/50 text-amber-300 font-label-code text-[11px] font-semibold uppercase tracking-wider shadow-lg">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest/95 backdrop-blur-md border border-amber-500/50 text-amber-300 font-label-code text-[11px] font-semibold uppercase tracking-wider shadow-lg whitespace-nowrap">
                         <span className="material-symbols-outlined text-[14px] text-amber-400">
                           science
                         </span>
